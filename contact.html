@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sanjeevani Medical</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="medical-home.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Send us a message</h2>
+
+            <form action="/submit-contact" method="post">
+
+                <div>
+                    <label for="username">Full Name:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="useremail">Email Address:</label>
+                    <input type="email" name="useremail" id="useremail" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="message">Your Query:</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Do you have this medicine?"></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sanjeevani Medical</p>
+    </footer>
+</body>
+</html>
