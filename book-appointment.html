@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="/submit-appointment" method="post">
+
+            <div>
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" name="patient-name" id="patient-name" required placeholder="Enter You Name"> 
+            </div>
+            <br>
+            <div>
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+
+            </div>
+
+            <br>
+
+            <div>
+                <label for="doctor">Choose Doctor:</label>
+
+                <select name="doctor" id="doctor">
+                    <option value="Dr. Sharma">Dr. Sharma</option>
+                    <option value="Dr. Gupta">Dr. Gupta</option>
+                    <option value="Dr. Ali">Dr. Ali</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="appointment">Appointment Date:</label>
+                <input type="date" id="appointment" name="appointment" required> 
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
