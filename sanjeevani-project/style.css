@@ -79,6 +79,7 @@ article{
     width: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
     
 }
 
@@ -176,4 +177,19 @@ article:hover{
         font-size: 1.5rem;
     }
     
+}
+
+
+.badge{
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
 }
