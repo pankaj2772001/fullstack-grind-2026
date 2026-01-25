@@ -78,6 +78,8 @@ article{
     margin: 20px auto;
     width: 300px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 article img{
@@ -135,4 +137,21 @@ input, select{
 input:focus, select:focus{
     border-color: #27ae60;
     outline: none;
+}
+
+footer{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+address{
+    font-style: normal;
+    color: #bdc3c7;
+}
+
+article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
