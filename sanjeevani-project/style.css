@@ -1,7 +1,7 @@
 body{
     background-color: #f0f8ff;
     font-family: Arial, sans-serif;
-    padding-top: 150px;
+    
     
 }
 
@@ -222,6 +222,57 @@ article:hover{
     .service-container{
         flex-direction: column;
     }
+
+    .split-layout{
+        flex-direction: column;
+    }
+
+    .team-members{
+flex-direction: column;
+    }
+
+    body{
+        padding-top: 180px;
+    }
 }
 
+
+.split-layout{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right-side img{
+     border-radius: 8px;
+     max-width: 100%;
+}
+
+.team-members img{
+
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.team-members{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.team-members article{
+    width: 250px;
+   
+}
+
+.team h2{
+    text-align: center;
+}
+
+.about-hero{
+    padding: 0px 20px;
+}
 
