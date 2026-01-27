@@ -1,0 +1,21 @@
+.movie-row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.movie-card{
+    width: 150px;
+    height: 250px;
+    background: rgb(254, 130, 130);
+    transition:  transform 0.5s;
+    border-radius: 8px;
+}
+
+.movie-card:hover{
+    transform: scale(1.5);
+    z-index: 10;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.1);
+}
