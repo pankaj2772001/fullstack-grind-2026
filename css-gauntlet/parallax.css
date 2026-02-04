@@ -1,0 +1,67 @@
+/* .parallax-section{
+    height: 400px;
+  
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('https://placehold.co/1920x1080?text=Background+Image');
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.content-section{
+    height: 400px;
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+ */
+
+
+ /* 1. Reset Body (Remove the old image) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Shared Behavior (The "Fixed" Magic) */
+.parallax-section {
+    height: 500px; /* Nice and tall */
+    background-attachment: fixed; /* THE MAGIC KEY */
+    background-size: cover;
+    background-position: center;
+    
+    /* Text Centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* 3. Image 1: Mountains (Greenish) */
+.mountain-bg {
+    background-image: url('https://placehold.co/1920x1080/2ecc71/ffffff?text=MOUNTAINS');
+}
+
+/* 4. Image 2: Ocean (Blueish) */
+.ocean-bg {
+    background-image: url('https://placehold.co/1920x1080/3498db/ffffff?text=OCEAN');
+}
+
+/* 5. The Content Spacers */
+.content-section {
+    height: 400px;
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

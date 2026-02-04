@@ -1,56 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Sanjeevani Medical</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="booking.html">Booking</a></li>
-            </ul>
-        </nav>
+      <h1>Sanjeevani Medical</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+          </li>
+          <li>
+            <button onclick="toggleTheme()" id="theme-btn">🌙 Dark Mode</button>
+          </li>
+          <li><button onclick="showAllProducts()">📋 Print Inventory</button></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="hero">
-            <h2>Your Health, Our Priority</h2>
-            <p>Get 100% genuine medicines and healthcare essentials delivered right to your doorstep.</p>
+      <section id="hero">
+        <h2>Your Health, Our Priority</h2>
+        <p>
+          Get 100% genuine medicines and healthcare essentials delivered right
+          to your doorstep.
+        </p>
 
-            <a href="products.html">
-                <button class="btn-primary">Order Medicines Now</button>
-                </a>
-        </section>
-        <section id="services">
-            <h3>Why Choose Us?</h3>
+        <a href="products.html">
+          <button class="btn-primary">Order Medicines Now</button>
+        </a>
+      </section>
+      <section id="services">
+        <h3>Why Choose Us?</h3>
 
-            <div class="service-container">
-                 <div class="service-card">
-                <h4>🚀 Fast Delivery</h4>
-                <p>We deliver within 24 hours.</p>
-            </div>
+        <div class="service-container">
+          <div class="service-card">
+            <h4>🚀 Fast Delivery</h4>
+            <p>We deliver within 24 hours.</p>
+          </div>
 
-            <div class="service-card">
-                <h4>📞 24/7 Support</h4>
-                <p>Call us anytime, day or night.</p>
-            </div>
+          <div class="service-card">
+            <h4>📞 24/7 Support</h4>
+            <p>Call us anytime, day or night.</p>
+          </div>
 
-            <div class="service-card">
+          <div class="service-card">
             <h4>🧪 Lab Tests</h4>
             <p>Home sample collection available.</p>
+          </div>
         </div>
-            </div>
-           
-        </section>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2026 Sanjeevani.</p>
-        <address>Navi Mumbai, Taloja Phase2, Sector 22.</address>
+      <p>&copy; 2026 Sanjeevani.</p>
+      <address>Navi Mumbai, Taloja Phase2, Sector 22.</address>
     </footer>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

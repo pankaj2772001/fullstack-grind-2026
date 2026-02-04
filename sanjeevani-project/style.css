@@ -224,4 +224,14 @@ article:hover{
     }
 }
 
+.dark-mode{
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+/* Optional: Make cards dark too if you want */
+.dark-mode.service-card,  article,  header, nav {
+    background-color: #1e1e1e;
+    color: white;
+}
 
