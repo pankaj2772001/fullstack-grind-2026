@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 1: Counter</title>
+    <style>
+        body { text-align: center; margin-top: 50px; font-family: sans-serif; }
+        #count-display { font-size: 80px; font-weight: bold; }
+        button { padding: 10px 20px; font-size: 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Counter</h1>
+    <p id="count-display">0</p>
+
+    <button onclick="decrease()">Decrease</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="increase()">Increase</button>
+
+    <script>
+        // 1. Create the variable
+        let count = 0;
+
+        let text = document.getElementById('count-display')
+
+        // 2. Define the functions
+        function increase() {
+            // Write code to add 1
+            // Write code to update the text
+            // Write code to check color (if/else)
+
+            count += 1
+
+            text.textContent = count
+
+            if(count > 0){
+                document.getElementById('count-display').style.color = "green"
+            }else if(count < 0){
+                document.getElementById('count-display').style.color = "red"
+            }else{
+                document.getElementById('count-display').style.color = "black"
+            }
+
+
+        }
+
+        function decrease() {
+            // Write code to subtract 1
+            // Write code to update the text
+            // Write code to check color (if/else)
+
+            count -= 1
+
+            text.textContent = count
+
+            if(count < 0){
+                document.getElementById('count-display').style.color = "red"
+            }else if(count > 0){
+                document.getElementById('count-display').style.color = "green"
+            }
+            else{
+                document.getElementById('count-display').style.color = "black"
+            }
+        }
+
+        function reset() {
+            // Write code to set to 0
+            // Write code to update the text
+            // Write code to set color to black
+
+            count = 0
+
+            text.textContent = count
+
+            document.getElementById('count-display').style.color = "black"
+        }
+
+
+
+        
+    </script>
+</body>
+</html>
